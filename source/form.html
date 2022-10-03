@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>HTML Academy: {{Form}}</title>
+</head>
+<body class="page-body">
+    <header class="page-header">
+        <div class="page-header__wrapper">
+            <a class="page-header__logo">
+                <img src="../image/logo.svg" width="147" height="40" alt="Приложение Pink">
+            </a>
+            <nav class="main-nav">
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                      <li class="site-list__item">
+                        <a>
+                          Главная
+                        </a>
+                      </li>
+                      <li class="site-list__item">
+                        <a href="form.html">
+                          Фотографии
+                        </a>
+                      </li>
+                      <li class="site-list__item site-list__item--active">
+                        <a href="#">
+                          Конкурс
+                        </a>
+                      </li>
+                      <li class="site-list__item">
+                        <a href="#">
+                          HTML Academy
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="page-main">
+        <h1 class="visually-hidden">Приложение Pink</h1>
+        <section class="app">
+            <div class="app__wrapper">
+                <header class="app__header">
+                    <h2 class="visually-hidden">Конкурс</h2>
+                    <p class="app__slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
+                </header>
+            </div>
+        </section>
+        <section class="tender">
+          <div class="tender__wrapper">
+            <h2 class="visually-hidden">Форма отправки</h2>
+            <p class="tender__text tender__text--center">Поделитесь своей историей и получите шанс выиграть
+              ценный приз — 1000 миль на вашу бонусную карту!
+              Пожалуйста, заполните форму ниже:
+            </p>
+            <form class="form-tender" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="form-tender__list">
+                <label>Фамилия <input type="text" name="last-name" placeholder="Укажите фамилию *"></label>
+               
+                <label>Имя<input type="text" name="my-name" placeholder="Введите ваше имя *">
+                </label>
+                <label>Фамилия<input type="text" name="middle-name" placeholder="Ну и отчество тоже">
+                </label>
+              </fieldset>
+              <fieldset  class="form-tender__list">
+                <legend>С каким приложением путешествовали?</legend>
+                  <p><input type="radio" name="radio-button" value="PinkдляIOS" placeholder="Pink для IOS" checked></p>
+                  <p><input type="radio" name="radio-button" value="PinkдляAndroid" placeholder="Pink для Android"></p>
+                  <p><input type="radio" name="radio-button" value="WindowsPhone" placeholder="Windows Phone"></p>
+              </fieldset>
+              <fieldset class="form-tender__list">
+                <legend>Контактная информация</legend>
+                <input type="text" id="contact-tel" name="contact-tel" placeholder="Номер, пожалуйста">
+                <label for="contact-tel">НОМЕР ТЕЛЕФОНА</label>
+                <input type="text" id="contact-adress" name="contact-adress" placeholder="Введите почту *">
+                <label for="contact-adress">Адрес почты</label>
+              </fieldset>
+              <fieldset class="form-tender__list">
+                <legend>
+                  Ваши безбашенные достижения в путешествии
+                </legend>
+                <p><input type="checkbox" value="sdelalselfi" placeholder="Сделал селфи с акулой" checked></p>
+                <p><input type="checkbox" value="sdelalselfi" placeholder="Видел Чака Норриса"></p>
+                <p><input type="checkbox" value="sdelalselfi" placeholder="Удержал башню">Удержал башню</p>
+                <p><input type="checkbox" value="sdelalselfi" placeholder="Обгорел на пляже"></p>
+                <p><input type="checkbox" value="sdelalselfi" placeholder="Накупил сувениров"></p>
+                <p><input type="checkbox" value="sdelalselfi" placeholder="Разгромил отель"></p>
+
+              </fieldset>
+              <fieldset class="form-tender__list">
+                <legend>Опишите свои эмоции</legend>
+                <textarea name="my-emotion" cols="30" rows="10" placeholder="инфо">Можно прям в красках, не стесняясь в выражениях</textarea>
+              </fieldset>
+              <button class="form-tender__button">Отправить форму</button>
+              <p class="form-tender__fill">
+                  * — обязательные для заполнения поля
+              </p>
+            </form>
+
+          </div>
+        </section>
+        
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="../image/logo-footer.svg" width="147" height="40" alt="Приложение Pink">
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--Youtube" href="https://www.youtube.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text" >Разработано</span>
+          <a class="copyright__link" href=""><img src="../image/html-academy.svg" alt="logo html-academy"></a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
